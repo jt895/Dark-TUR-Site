@@ -126,16 +126,16 @@ export function Home() {
   return (
     <>
       {/* Hero Section */}
-      <Section className="pt-32 pb-16" background="dark" animate={false}>
-        <div className="relative overflow-hidden rounded-[28px] border border-[#163135] min-h-[620px] bg-[#03090A]">
+      <Section className="pt-28 pb-12" background="dark" animate={false}>
+        <div className="relative overflow-hidden min-h-[680px] bg-[#03090A] -mx-6 lg:-mx-8">
           <iframe
             src="/hero-flag.html"
             title="United Republic animated hero background"
-            className="absolute inset-0 h-full w-full opacity-45 pointer-events-none"
+            className="absolute inset-0 h-full w-full opacity-55 pointer-events-none border-0"
           />
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(3,9,10,0.88)_0%,rgba(3,9,10,0.78)_45%,rgba(3,9,10,0.58)_100%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(3,9,10,0.82)_0%,rgba(3,9,10,0.70)_42%,rgba(3,9,10,0.42)_100%)]" />
           <motion.div
-            className="relative z-10 max-w-4xl px-8 py-16 md:px-14 md:py-20"
+            className="relative z-10 max-w-4xl px-6 py-16 md:px-12 md:py-20 lg:px-16"
             initial="hidden"
             animate="visible"
             variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.12 } } }}
@@ -148,14 +148,14 @@ export function Home() {
               Start with the right questions, then build the right response.
             </motion.h1>
             <motion.p
-              className="text-xl md:text-2xl text-[#D5E2DF] mb-6"
+              className="text-xl md:text-2xl text-gray-300 mb-6"
               variants={{ hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } }}
               transition={{ duration: 0.6, ease: "easeOut" }}
             >
               The United Republic helps organisations define the real problem, shape the right strategy, and guide the work that follows.
             </motion.p>
             <motion.p
-              className="text-lg text-[#B8C9C6] mb-10 max-w-3xl"
+              className="text-lg text-gray-300 mb-10 max-w-3xl"
               variants={{ hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } }}
               transition={{ duration: 0.6, ease: "easeOut" }}
             >
