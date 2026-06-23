@@ -17,9 +17,9 @@ export function Section({
   animate = true,
 }: SectionProps) {
   const backgrounds = {
-    white: "bg-[var(--surface-1)] text-[var(--text-main)]",
-    grey: "bg-[var(--surface-2)] text-[var(--text-main)]",
-    dark: "bg-[var(--surface-0)] text-white",
+    white: "bg-[#051012] text-white",
+    grey: "bg-[#081517] text-white",
+    dark: "bg-[#03090A] text-white",
   };
 
   const paddings = {

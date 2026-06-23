@@ -4,7 +4,6 @@ import { Card } from "../components/Card";
 import { ClientLogos } from "../components/ClientLogos";
 import { ArrowRight, CheckCircle, Users, Target, Lightbulb } from "lucide-react";
 import { motion } from "motion/react";
-import { HeroFlagBackground } from "../components/HeroFlagBackground";
 
 export function Home() {
   const proofPoints = [
@@ -126,48 +125,56 @@ export function Home() {
 
   return (
     <>
-      {/* Hero Section */}
-      <Section className="pt-32 pb-20" background="white" animate={false}>
-        <motion.div
-          className="max-w-4xl"
-          initial="hidden"
-          animate="visible"
-          variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.12 } } }}
-        >
-          <motion.h1
-            className="text-5xl md:text-6xl lg:text-7xl mb-8 leading-tight"
-            variants={{ hidden: { opacity: 0, y: 34 }, visible: { opacity: 1, y: 0 } }}
-            transition={{ duration: 0.7, ease: "easeOut" }}
-          >
-            Start with the right questions, then build the right response.
-          </motion.h1>
-          <motion.p
-            className="text-xl md:text-2xl text-gray-600 mb-6"
-            variants={{ hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-          >
-            The United Republic helps organisations define the real problem, shape the right strategy, and guide the work that follows.
-          </motion.p>
-          <motion.p
-            className="text-lg text-gray-600 mb-10 max-w-3xl"
-            variants={{ hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-          >
-            We work with government, brands and complex organisations to make sure they are solving the right problems before investing in campaigns, content, media, stakeholder activity or creative development.
-          </motion.p>
+      {{/* Hero Section */}
+      <Section className="pt-32 pb-16" background="dark" animate={false}>
+        <div className="relative overflow-hidden rounded-[28px] border border-[#163135] min-h-[620px] bg-[#03090A]">
+          <iframe
+            src="/hero-flag.html"
+            title="United Republic animated hero background"
+            className="absolute inset-0 h-full w-full opacity-45 pointer-events-none"
+          />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(3,9,10,0.88)_0%,rgba(3,9,10,0.78)_45%,rgba(3,9,10,0.58)_100%)]" />
           <motion.div
-            className="flex flex-col sm:flex-row gap-4"
-            variants={{ hidden: { opacity: 0, y: 18 }, visible: { opacity: 1, y: 0 } }}
-            transition={{ duration: 0.55, ease: "easeOut" }}
+            className="relative z-10 max-w-4xl px-8 py-16 md:px-14 md:py-20"
+            initial="hidden"
+            animate="visible"
+            variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.12 } } }}
           >
-            <Button to="/contact" size="lg">
-              Start with a strategic diagnostic
-            </Button>
-            <Button to="/how-we-work" variant="outline" size="lg">
-              See how we work
-            </Button>
+            <motion.h1
+              className="text-5xl md:text-6xl lg:text-7xl mb-8 leading-tight text-white"
+              variants={{ hidden: { opacity: 0, y: 34 }, visible: { opacity: 1, y: 0 } }}
+              transition={{ duration: 0.7, ease: "easeOut" }}
+            >
+              Start with the right questions, then build the right response.
+            </motion.h1>
+            <motion.p
+              className="text-xl md:text-2xl text-[#D5E2DF] mb-6"
+              variants={{ hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
+              The United Republic helps organisations define the real problem, shape the right strategy, and guide the work that follows.
+            </motion.p>
+            <motion.p
+              className="text-lg text-[#B8C9C6] mb-10 max-w-3xl"
+              variants={{ hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
+              We work with government, brands and complex organisations to make sure they are solving the right problems before investing in campaigns, content, media, stakeholder activity or creative development.
+            </motion.p>
+            <motion.div
+              className="flex flex-col sm:flex-row gap-4"
+              variants={{ hidden: { opacity: 0, y: 18 }, visible: { opacity: 1, y: 0 } }}
+              transition={{ duration: 0.55, ease: "easeOut" }}
+            >
+              <Button to="/contact" size="lg">
+                Start with a strategic diagnostic
+              </Button>
+              <Button to="/how-we-work" variant="outline" size="lg">
+                See how we work
+              </Button>
+            </motion.div>
           </motion.div>
-        </motion.div>
+        </div>
       </Section>
 
       {/* What We Do Differently */}
@@ -206,7 +213,7 @@ export function Home() {
       <Section background="grey">
         <div className="max-w-4xl mx-auto text-center mb-20">
           <h2 className="text-4xl md:text-5xl mb-6">Our methodology</h2>
-          <p className="text-xl text-gray-600">The United Republic Creative Methodology</p>
+          <p className="text-xl text-[#B8C9C6]">The United Republic Creative Methodology</p>
         </div>
         <div className="space-y-16 max-w-6xl mx-auto">
           {methodology.map((step, index) => (
@@ -217,12 +224,12 @@ export function Home() {
               <div className="lg:col-span-11">
                 <Card>
                   <h3 className="text-3xl mb-4">{step.title}</h3>
-                  <p className="text-lg text-gray-600 mb-8 leading-relaxed">{step.description}</p>
+                  <p className="text-lg text-[#B8C9C6] mb-8 leading-relaxed">{step.description}</p>
                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
                     {step.points.map((point, idx) => (
                       <li key={idx} className="flex items-start gap-3">
                         <ArrowRight className="w-5 h-5 text-[#00796B] flex-shrink-0 mt-0.5" />
-                        <span className="text-gray-700">{point}</span>
+                        <span className="text-[#C8D7D4]">{point}</span>
                       </li>
                     ))}
                   </ul>
@@ -242,10 +249,10 @@ export function Home() {
           {services.map((service, index) => (
             <Card key={index} hover className="h-full">
               <h3 className="text-2xl mb-3 text-[#00796B]">{service.title}</h3>
-              <p className="text-base mb-6 text-gray-600 italic">{service.subtitle}</p>
+              <p className="text-base mb-6 text-[#B8C9C6] italic">{service.subtitle}</p>
               <ul className="space-y-2">
                 {service.items.map((item, idx) => (
-                  <li key={idx} className="text-sm text-gray-700 leading-relaxed">
+                  <li key={idx} className="text-sm text-[#C8D7D4] leading-relaxed">
                     {item}
                   </li>
                 ))}
@@ -262,7 +269,7 @@ export function Home() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
           {sectors.map((sector, index) => (
-            <div key={index} className="bg-white p-6 border-l-4 border-[#00796B]">
+            <div key={index} className="bg-[#0A1719] p-6 border-l-4 border-[#00796B]">
               <p className="text-base">{sector}</p>
             </div>
           ))}

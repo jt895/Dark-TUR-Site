@@ -60,7 +60,7 @@ export function ClientLogos() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-sm uppercase tracking-wider text-[var(--text-subtle)] mb-2"
+          className="text-sm uppercase tracking-wider text-[#9DB2AE] mb-2"
         >
           Trusted by leading organizations
         </motion.h3>
@@ -89,10 +89,10 @@ export function ClientLogos() {
                   <div className="h-full" aria-hidden="true" />
                 )}
               </div>
-              <div className="font-medium text-[var(--text-main)] mb-1 text-sm md:text-base">
+              <div className="font-medium text-white mb-1 text-sm md:text-base">
                 {client.name}
               </div>
-              <div className="text-xs text-[var(--text-subtle)] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="text-xs text-[#6F8682] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 {client.category}
               </div>
             </div>
@@ -105,9 +105,9 @@ export function ClientLogos() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.4 }}
-        className="text-center mt-8 pt-6 border-t border-[var(--border-subtle)]"
+        className="text-center mt-10 pt-8 border-t border-[#163135]"
       >
-        <p className="text-[var(--text-muted)] max-w-3xl mx-auto">
+        <p className="text-[#9DB2AE] max-w-3xl mx-auto">
           Strategic communications work across brand development, retail campaigns, content strategy,
           and implementation for organizations spanning automotive, financial services, government,
           retail, wine and spirits, technology, and social sectors.

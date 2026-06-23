@@ -22,12 +22,12 @@ export function Button({
   size = "md",
   className = "",
 }: ButtonProps) {
-  const baseStyles = "inline-flex items-center justify-center gap-2 rounded-none transition-all duration-200 font-medium will-change-transform hover:-translate-y-0.5 active:translate-y-0";
+  const baseStyles = "inline-flex items-center justify-center gap-2 transition-all duration-200 font-medium will-change-transform hover:-translate-y-0.5 active:translate-y-0";
 
   const variants = {
-    primary: "bg-[var(--accent)] text-white hover:bg-[var(--accent-bright)] shadow-sm hover:shadow-md",
-    secondary: "bg-[var(--surface-2)] text-[var(--text-main)] hover:bg-[var(--surface-3)] border border-[var(--border-strong)]",
-    outline: "border-2 border-[var(--accent)] text-[var(--accent-soft)] hover:bg-[var(--accent)] hover:text-white",
+    primary: "bg-[#0F7C5C] text-white hover:bg-[#12A77A] shadow-sm hover:shadow-md",
+    secondary: "bg-[#0B1416] text-white hover:bg-[#122225] shadow-sm hover:shadow-md",
+    outline: "border-2 border-[#17B38D] text-[#BCEFE3] hover:bg-[#0F7C5C] hover:text-white",
   };
 
   const sizes = {

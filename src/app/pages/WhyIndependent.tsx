@@ -49,7 +49,7 @@ export function WhyIndependent() {
 
       <Section background="grey">
         <div className="max-w-4xl mx-auto">
-          <Card className="bg-white border-l-4 border-[#00796B]">
+          <Card className="bg-[#0A1719] border-l-4 border-[#00796B]">
             <p className="text-lg leading-relaxed">
               Strategy means starting with the problem, not the solution. It means strategic thinking that's free from execution bias, media ownership, or agency capability constraints. And it means clients get clear direction before they invest in delivery.
             </p>
@@ -67,7 +67,7 @@ export function WhyIndependent() {
                   <CheckCircle className="w-7 h-7 text-[#00796B] flex-shrink-0 mt-1" />
                   <h3 className="text-2xl">{benefit.title}</h3>
                 </div>
-                <p className="text-gray-700 leading-relaxed ml-11">{benefit.description}</p>
+                <p className="text-[#C8D7D4] leading-relaxed ml-11">{benefit.description}</p>
               </Card>
             ))}
           </div>
@@ -128,7 +128,7 @@ export function WhyIndependent() {
           <h2 className="text-4xl md:text-5xl mb-6">
             Start with strategy
           </h2>
-          <p className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-[#B8C9C6] mb-10 max-w-3xl mx-auto leading-relaxed">
             If you need strategic clarity before you invest in execution—and want to make sure that clarity carries through to delivery—let's talk.
           </p>
           <Button to="/contact" size="lg">
