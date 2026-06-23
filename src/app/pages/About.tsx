@@ -44,37 +44,37 @@ export function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Card hover>
               <h3 className="text-2xl mb-4 text-[#00796B]">Strategy before execution</h3>
-              <p className="text-white leading-relaxed">
+              <p className="text-gray-700 leading-relaxed">
                 We start with the problem, not the solution. That means better briefs, clearer direction, and work that's focused on what matters most.
               </p>
             </Card>
             <Card hover>
               <h3 className="text-2xl mb-4 text-[#00796B]">Independent advice</h3>
-              <p className="text-white leading-relaxed">
+              <p className="text-gray-700 leading-relaxed">
                 We don't have a vested interest in a particular channel, medium or approach. Our only interest is making sure the strategy is right.
               </p>
             </Card>
             <Card hover>
               <h3 className="text-2xl mb-4 text-[#00796B]">Senior practitioners</h3>
-              <p className="text-white leading-relaxed">
+              <p className="text-gray-700 leading-relaxed">
                 You work with experienced strategists who've delivered complex, high-stakes communications programs—not junior account teams.
               </p>
             </Card>
             <Card hover>
               <h3 className="text-2xl mb-4 text-[#00796B]">The right partners</h3>
-              <p className="text-white leading-relaxed">
+              <p className="text-gray-700 leading-relaxed">
                 We identify, brief and guide specialist partners based on what the work needs—not what we happen to have in-house.
               </p>
             </Card>
             <Card hover>
               <h3 className="text-2xl mb-4 text-[#00796B]">Evidence-led</h3>
-              <p className="text-white leading-relaxed">
+              <p className="text-gray-700 leading-relaxed">
                 Our strategies are grounded in research, insight and data—not assumptions or creative instinct.
               </p>
             </Card>
             <Card hover>
               <h3 className="text-2xl mb-4 text-[#00796B]">Focused on outcomes</h3>
-              <p className="text-white leading-relaxed">
+              <p className="text-gray-700 leading-relaxed">
                 We measure success by results, not outputs. Strategy is only as good as what it achieves.
               </p>
             </Card>
@@ -118,7 +118,7 @@ export function About() {
           <h2 className="text-4xl md:text-5xl mb-6">
             Let's talk about your challenge
           </h2>
-          <p className="text-xl text-white mb-10 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
             If you're facing a complex communications challenge and need strategic clarity before you invest in execution, we'd like to hear from you.
           </p>
           <Button to="/contact" size="lg">

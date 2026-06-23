@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import turLogoWhite from "../assets/tur-logo-white.png";
+import turHeaderLogo from "../assets/tur-logo-white.png";
 
 export function Navigation() {
   const location = useLocation();
@@ -32,12 +32,12 @@ export function Navigation() {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? "bg-[#03090A]/96 shadow-sm border-b border-[#163135]" : "bg-[#03090A]/90 backdrop-blur-sm border-b border-[#163135]"
+      isScrolled ? "bg-[rgba(8,12,12,0.96)] shadow-[0_10px_35px_rgba(0,0,0,0.35)]" : "bg-[rgba(8,12,12,0.78)] backdrop-blur-md"
     }`}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-28">
           <Link to="/" className="flex items-center space-x-3 group">
-            <img src={turLogoWhite} alt="The United Republic" className="h-24 w-auto transition-opacity group-hover:opacity-80" />
+            <img src={turHeaderLogo} alt="The United Republic" className="h-24 w-auto transition-opacity group-hover:opacity-80" />
           </Link>
 
           <div className="hidden lg:flex items-center space-x-1">
@@ -47,13 +47,13 @@ export function Navigation() {
                 to={link.path}
                 className={`px-4 py-2 text-sm font-medium transition-colors relative ${
                   isActive(link.path)
-                    ? "text-[#D8FFF6]"
-                    : "text-[#E9F4F2] hover:text-[#9AE8D5]"
+                    ? "text-[var(--accent-soft)]"
+                    : "text-[var(--text-main)] hover:text-[var(--accent-soft)]"
                 }`}
               >
                 {link.label}
                 {isActive(link.path) && (
-                  <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#17B38D]" />
+                  <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[var(--accent)]" />
                 )}
               </Link>
             ))}
@@ -61,7 +61,7 @@ export function Navigation() {
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 text-[#E9F4F2] hover:text-[#9AE8D5] transition-colors"
+            className="lg:hidden p-2 text-[var(--text-main)] hover:text-[var(--accent-soft)] transition-colors"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -70,7 +70,7 @@ export function Navigation() {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="lg:hidden bg-[#03090A] border-t border-[#163135]">
+        <div className="lg:hidden bg-[var(--surface-1)] border-t border-[var(--border-subtle)]">
           <div className="px-6 py-4 space-y-1">
             {navLinks.map((link) => (
               <Link
@@ -79,8 +79,8 @@ export function Navigation() {
                 onClick={() => setIsMobileMenuOpen(false)}
                 className={`block px-4 py-3 text-base font-medium transition-colors ${
                   isActive(link.path)
-                    ? "text-[#D8FFF6] bg-[#0A1719]"
-                    : "text-[#E9F4F2] hover:text-[#9AE8D5] hover:bg-[#0A1719]"
+                    ? "text-[var(--accent-soft)] bg-[var(--surface-2)]"
+                    : "text-[var(--text-main)] hover:text-[var(--accent-soft)] hover:bg-[var(--surface-2)]"
                 }`}
               >
                 {link.label}

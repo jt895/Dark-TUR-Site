@@ -80,7 +80,7 @@ export function Contact() {
       <Section className="pt-32 pb-20" background="white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl mb-8">Contact</h1>
-          <p className="text-xl text-white leading-relaxed">
+          <p className="text-xl text-gray-600 leading-relaxed">
             Let's talk about your challenge and how The United Republic can help.
           </p>
         </div>
@@ -94,7 +94,7 @@ export function Contact() {
               <h2 className="text-3xl mb-6">Send us an enquiry</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-white mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                     Name *
                   </label>
                   <input
@@ -108,7 +108,7 @@ export function Contact() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                     Email *
                   </label>
                   <input
@@ -122,7 +122,7 @@ export function Contact() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="organisation" className="block text-sm font-medium text-white mb-2">
+                  <label htmlFor="organisation" className="block text-sm font-medium text-gray-700 mb-2">
                     Organisation
                   </label>
                   <input
@@ -135,7 +135,7 @@ export function Contact() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-white mb-2">
+                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
                     Phone
                   </label>
                   <input
@@ -148,7 +148,7 @@ export function Contact() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-white mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
                     Tell us about your challenge *
                   </label>
                   <textarea
@@ -197,11 +197,11 @@ export function Contact() {
               </div>
             </Card>
 
-            <Card className="bg-[#081517]">
+            <Card className="bg-[#F7F7F7]">
               <h3 className="text-xl mb-4">Typical projects we support</h3>
               <ul className="space-y-3">
                 {projectTypes.map((type, index) => (
-                  <li key={index} className="text-white text-sm leading-relaxed pl-4 border-l-2 border-[#00796B]">
+                  <li key={index} className="text-gray-700 text-sm leading-relaxed pl-4 border-l-2 border-[#00796B]">
                     {type}
                   </li>
                 ))}

@@ -76,7 +76,7 @@ export function Services() {
       <Section className="pt-32 pb-20" background="white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl mb-8">Services</h1>
-          <p className="text-xl text-white leading-relaxed">
+          <p className="text-xl text-gray-600 leading-relaxed">
             The United Republic is designed to be easy to buy from. Our services are structured around clear offers that can be scaled to suit the challenge, the timeline and the level of support you need.
           </p>
         </div>
@@ -84,7 +84,7 @@ export function Services() {
 
       <Section background="grey" padding="sm">
         <div className="max-w-4xl mx-auto">
-          <Card className="bg-[#0A1719] border-l-4 border-[#00796B]">
+          <Card className="bg-white border-l-4 border-[#00796B]">
             <p className="text-lg leading-relaxed">
               Every service can include campaign execution support—we help identify, brief and guide the right specialist partners to bring the strategy to life.
             </p>
@@ -106,11 +106,11 @@ export function Services() {
                     <h2 className="text-3xl md:text-4xl mb-2">{service.title}</h2>
                     <p className="text-xl text-[#00796B] italic">{service.subtitle}</p>
                   </div>
-                  <span className="bg-[#081517] px-4 py-2 text-sm font-medium text-white whitespace-nowrap">
+                  <span className="bg-[#F7F7F7] px-4 py-2 text-sm font-medium text-gray-600 whitespace-nowrap">
                     {service.duration}
                   </span>
                 </div>
-                <p className="text-lg text-white leading-relaxed">
+                <p className="text-lg text-gray-700 leading-relaxed">
                   {service.description}
                 </p>
               </div>
@@ -122,18 +122,18 @@ export function Services() {
                     {service.deliverables.map((item, idx) => (
                       <li key={idx} className="flex items-start gap-3">
                         <CheckCircle className="w-5 h-5 text-[#00796B] flex-shrink-0 mt-0.5" />
-                        <span className="text-white">{item}</span>
+                        <span className="text-gray-700">{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold mb-4">When to use this</h3>
-                  <p className="text-white leading-relaxed mb-6">
+                  <p className="text-gray-700 leading-relaxed mb-6">
                     {service.whenToUse}
                   </p>
                   <h3 className="text-lg font-semibold mb-4">Execution support</h3>
-                  <p className="text-white leading-relaxed">
+                  <p className="text-gray-700 leading-relaxed">
                     {service.executionSupport}
                   </p>
                 </div>
@@ -145,9 +145,9 @@ export function Services() {
 
       <Section background="white">
         <div className="max-w-4xl mx-auto">
-          <Card className="bg-[#081517]">
+          <Card className="bg-[#F7F7F7]">
             <h3 className="text-2xl mb-4">Not sure which service you need?</h3>
-            <p className="text-lg text-white mb-6 leading-relaxed">
+            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               Every project is different. We can tailor our approach to suit your challenge, your timeline, and where you need support most. Let's talk about what you're trying to achieve.
             </p>
             <Button to="/contact">
@@ -162,10 +162,10 @@ export function Services() {
           <h2 className="text-4xl md:text-5xl mb-6">
             The tailored team model
           </h2>
-          <p className="text-xl text-white mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
             The United Republic doesn't run a fixed agency structure. We build the right team around each challenge—bringing together specialist partners for creative, media, content, production and delivery based on what the work needs, not what we happen to have in-house.
           </p>
-          <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             That means you get strategic clarity up front, the right expertise in execution, and work that's focused on outcomes.
           </p>
         </div>

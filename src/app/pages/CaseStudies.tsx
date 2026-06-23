@@ -95,7 +95,7 @@ export function CaseStudies() {
       <Section className="pt-32 pb-20" background="white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl mb-8">Case Studies</h1>
-          <p className="text-xl text-white leading-relaxed">
+          <p className="text-xl text-gray-600 leading-relaxed">
             Selected strategic communications work across government, behaviour change, brand strategy, product launches, and complex stakeholder environments.
           </p>
         </div>
@@ -103,7 +103,7 @@ export function CaseStudies() {
 
       <Section background="grey" padding="sm">
         <div className="max-w-4xl mx-auto">
-          <Card className="border-l-4 border-[#00796B] bg-[#0A1719]">
+          <Card className="border-l-4 border-[#00796B] bg-white">
             <p className="text-lg leading-relaxed">
               These case studies demonstrate strategic thinking, practical problem-solving, and measurable outcomes, not just polished creative outputs.
             </p>
@@ -134,7 +134,7 @@ export function CaseStudies() {
                       {study.category}
                     </p>
                     <h2 className="text-3xl mb-4">{study.title}</h2>
-                    <p className="text-lg text-white leading-relaxed mb-6">
+                    <p className="text-lg text-gray-700 leading-relaxed mb-6">
                       {study.summary}
                     </p>
                     <div className="flex items-center gap-2 text-[#00796B] font-medium">
@@ -143,22 +143,22 @@ export function CaseStudies() {
                   </div>
                   <div className="space-y-6">
                     <div>
-                      <h3 className="text-sm font-semibold text-white mb-2 uppercase tracking-wide">
+                      <h3 className="text-sm font-semibold text-gray-500 mb-2 uppercase tracking-wide">
                         The Challenge
                       </h3>
-                      <p className="text-white">{study.challenge}</p>
+                      <p className="text-gray-700">{study.challenge}</p>
                     </div>
                     <div>
-                      <h3 className="text-sm font-semibold text-white mb-2 uppercase tracking-wide">
+                      <h3 className="text-sm font-semibold text-gray-500 mb-2 uppercase tracking-wide">
                         Our Role
                       </h3>
-                      <p className="text-white">{study.role}</p>
+                      <p className="text-gray-700">{study.role}</p>
                     </div>
                     <div>
-                      <h3 className="text-sm font-semibold text-white mb-2 uppercase tracking-wide">
+                      <h3 className="text-sm font-semibold text-gray-500 mb-2 uppercase tracking-wide">
                         Outcome
                       </h3>
-                      <p className="text-white">{study.outcome}</p>
+                      <p className="text-gray-700">{study.outcome}</p>
                     </div>
                   </div>
                 </div>
@@ -173,7 +173,7 @@ export function CaseStudies() {
           <h2 className="text-4xl md:text-5xl mb-6">
             Let's talk about your challenge
           </h2>
-          <p className="text-xl text-white mb-10 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
             These are just a few examples of the work delivered. Every project is different. Let's discuss how we can help with yours.
           </p>
           <Button to="/contact" size="lg">
