@@ -124,59 +124,59 @@ export function Home() {
   ];
 
   return (
-    <>
+    <div className="relative bg-[#03090A]">
+      <div className="fixed inset-0 z-0 pointer-events-none">
+        <iframe
+          src="/hero-flag.html"
+          title="United Republic animated page background"
+          className="absolute inset-0 h-full w-full border-0 opacity-45"
+        />
+        <div className="absolute inset-0 bg-[rgba(3,9,10,0.72)]" />
+      </div>
+      <div className="relative z-10">
       {/* Hero Section */}
-      <Section className="pt-28 pb-0" background="dark" animate={false}>
-        <div className="relative -mx-6 lg:-mx-8 min-h-[150vh]">
-          <div className="sticky top-0 h-screen overflow-hidden bg-[#03090A]">
-            <iframe
-              src="/hero-flag.html"
-              title="United Republic animated hero background"
-              className="absolute inset-0 h-full w-full opacity-60 pointer-events-none border-0"
-            />
-            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(3,9,10,0.82)_0%,rgba(3,9,10,0.70)_42%,rgba(3,9,10,0.44)_100%)]" />
-            <div className="relative z-10 max-w-4xl px-6 pt-16 pb-20 md:px-12 lg:px-16">
-              <motion.div
-                initial="hidden"
-                animate="visible"
-                variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.12 } } }}
-              >
-                <motion.h1
-                  className="text-5xl md:text-6xl lg:text-7xl mb-8 leading-tight text-white"
-                  variants={{ hidden: { opacity: 0, y: 34 }, visible: { opacity: 1, y: 0 } }}
-                  transition={{ duration: 0.7, ease: "easeOut" }}
-                >
-                  Start with the right questions, then build the right response.
-                </motion.h1>
-                <motion.p
-                  className="text-xl md:text-2xl text-white mb-6"
-                  variants={{ hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } }}
-                  transition={{ duration: 0.6, ease: "easeOut" }}
-                >
-                  The United Republic helps organisations define the real problem, shape the right strategy, and guide the work that follows.
-                </motion.p>
-                <motion.p
-                  className="text-lg text-white mb-10 max-w-3xl"
-                  variants={{ hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } }}
-                  transition={{ duration: 0.6, ease: "easeOut" }}
-                >
-                  We work with government, brands and complex organisations to make sure they are solving the right problems before investing in campaigns, content, media, stakeholder activity or creative development.
-                </motion.p>
-                <motion.div
-                  className="flex flex-col sm:flex-row gap-4"
-                  variants={{ hidden: { opacity: 0, y: 18 }, visible: { opacity: 1, y: 0 } }}
-                  transition={{ duration: 0.55, ease: "easeOut" }}
-                >
-                  <Button to="/contact" size="lg">
-                    Start with a strategic diagnostic
-                  </Button>
-                  <Button to="/how-we-work" variant="outline" size="lg">
-                    See how we work
-                  </Button>
-                </motion.div>
-              </motion.div>
-            </div>
-          </div>
+      <Section className="pt-28 pb-8" background="dark" animate={false}>
+        <div className="min-h-[72vh] flex items-center">
+          <motion.div
+            className="max-w-4xl px-0 py-12"
+            initial="hidden"
+            animate="visible"
+            variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.12 } } }}
+          >
+            <motion.h1
+              className="text-5xl md:text-6xl lg:text-7xl mb-8 leading-tight text-white"
+              variants={{ hidden: { opacity: 0, y: 34 }, visible: { opacity: 1, y: 0 } }}
+              transition={{ duration: 0.7, ease: "easeOut" }}
+            >
+              Start with the right questions, then build the right response.
+            </motion.h1>
+            <motion.p
+              className="text-xl md:text-2xl text-white mb-6"
+              variants={{ hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
+              The United Republic helps organisations define the real problem, shape the right strategy, and guide the work that follows.
+            </motion.p>
+            <motion.p
+              className="text-lg text-white mb-10 max-w-3xl"
+              variants={{ hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
+              We work with government, brands and complex organisations to make sure they are solving the right problems before investing in campaigns, content, media, stakeholder activity or creative development.
+            </motion.p>
+            <motion.div
+              className="flex flex-col sm:flex-row gap-4"
+              variants={{ hidden: { opacity: 0, y: 18 }, visible: { opacity: 1, y: 0 } }}
+              transition={{ duration: 0.55, ease: "easeOut" }}
+            >
+              <Button to="/contact" size="lg">
+                Start with a strategic diagnostic
+              </Button>
+              <Button to="/how-we-work" variant="outline" size="lg">
+                See how we work
+              </Button>
+            </motion.div>
+          </motion.div>
         </div>
       </Section>
 
@@ -312,6 +312,7 @@ export function Home() {
           </Button>
         </div>
       </Section>
-    </>
+      </div>
+    </div>
   );
 }
