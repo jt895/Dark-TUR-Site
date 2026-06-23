@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+/* The United Republic Brand Colours */
+:root {
+  --accent: #076f53;
+  --accent-bright: #27b98d;
+  --accent-soft: #8ad0bf;
+  --grey-main: #939598;
+  --grey-soft: #d1d2d4;
+  --surface-0: #090d0d;
+  --surface-1: #101617;
+  --surface-2: #151c1d;
+  --surface-3: #1c2526;
+  --card-bg: rgba(18, 24, 25, 0.92);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(138, 208, 191, 0.18);
+  --text-main: #f3f3f4;
+  --text-soft: #dfe8e6;
+  --text-muted: #c7d2cf;
+  --text-subtle: #99a5a3;
+}
+
+html {
+  scroll-behaviour: smooth;
+  background: var(--surface-0);
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: var(--text-main);
+  line-height: 1.6;
+  background:
+    radial-gradient(circle at top, rgba(39, 185, 141, 0.08), transparent 32%),
+    linear-gradient(180deg, #0a0f10 0%, #0e1314 45%, #101617 100%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+}
+
+h1 { font-size: 3rem; font-weight: 600; }
+h2 { font-size: 2.25rem; font-weight: 600; }
+h3 { font-size: 1.75rem; font-weight: 600; }
+h4 { font-size: 1.375rem; font-weight: 600; }
+h5 { font-size: 1.125rem; font-weight: 600; }
+
+p {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+a {
+  transition: all 0.2s ease;
+}
+
+img {
+  max-width: 100%;
+}
+
+.bg-white { background-color: var(--surface-1) !important; }
+.bg-\[\#F7F7F7\] { background-color: var(--surface-2) !important; }
+.bg-gray-50 { background-color: var(--surface-2) !important; }
+
+.text-gray-700,
+.text-gray-600,
+.text-gray-500,
+.text-\[\#666\],
+.text-\[\#999\],
+.text-\[\#2C2C2C\] {
+  color: var(--text-muted) !important;
+}
+
+.border-gray-200,
+.border-gray-300 {
+  border-color: var(--border-subtle) !important;
+}
+
+input,
+textarea,
+select {
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text-main);
+  border-color: var(--border-subtle);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-subtle);
+}
+
+label {
+  color: var(--text-soft);
+}
+
+iframe {
+  color-scheme: dark;
+}
