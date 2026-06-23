@@ -125,7 +125,7 @@ export function Home() {
 
   return (
     <>
-      {{/* Hero Section */}
+      {/* Hero Section */}
       <Section className="pt-32 pb-16" background="dark" animate={false}>
         <div className="relative overflow-hidden rounded-[28px] border border-[#163135] min-h-[620px] bg-[#03090A]">
           <iframe
