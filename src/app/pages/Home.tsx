@@ -125,7 +125,11 @@ export function Home() {
   ];
 
   return (
-    <>
+    <div className="relative isolate overflow-hidden">
+      <div className="fixed inset-0 z-0">
+        <HeroFlagBackground />
+      </div>
+      <div className="relative z-10">
       {/* Hero Section */}
       <Section className="pt-32 pb-20" background="white" animate={false}>
         <motion.div
@@ -302,6 +306,7 @@ export function Home() {
           </Button>
         </div>
       </Section>
-    </>
+      </div>
+    </div>
   );
 }
