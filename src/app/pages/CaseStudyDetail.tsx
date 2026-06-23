@@ -294,22 +294,22 @@ export function CaseStudyDetail() {
       <Section background="grey" padding="md">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
           <Card>
-            <h3 className="text-sm font-semibold text-[#8EA3A0] mb-2 uppercase tracking-wide">
+            <h3 className="text-sm font-semibold text-white mb-2 uppercase tracking-wide">
               The Challenge
             </h3>
-            <p className="text-[#C8D7D4] leading-relaxed">{study.challenge}</p>
+            <p className="text-white leading-relaxed">{study.challenge}</p>
           </Card>
           <Card>
-            <h3 className="text-sm font-semibold text-[#8EA3A0] mb-2 uppercase tracking-wide">
+            <h3 className="text-sm font-semibold text-white mb-2 uppercase tracking-wide">
               Our Role
             </h3>
-            <p className="text-[#C8D7D4] leading-relaxed">{study.role}</p>
+            <p className="text-white leading-relaxed">{study.role}</p>
           </Card>
           <Card>
-            <h3 className="text-sm font-semibold text-[#8EA3A0] mb-2 uppercase tracking-wide">
+            <h3 className="text-sm font-semibold text-white mb-2 uppercase tracking-wide">
               Outcome
             </h3>
-            <p className="text-[#C8D7D4] leading-relaxed">{study.outcome}</p>
+            <p className="text-white leading-relaxed">{study.outcome}</p>
           </Card>
         </div>
       </Section>
@@ -318,7 +318,7 @@ export function CaseStudyDetail() {
         <div className="max-w-4xl mx-auto space-y-12">
           <div>
             <h2 className="text-3xl mb-6">Background</h2>
-            <p className="text-lg text-[#C8D7D4] leading-relaxed">{study.realProblem}</p>
+            <p className="text-lg text-white leading-relaxed">{study.realProblem}</p>
           </div>
 
           <div>
@@ -327,7 +327,7 @@ export function CaseStudyDetail() {
               {study.approach.map((item: string, index: number) => (
                 <li key={index} className="flex items-start gap-4">
                   <CheckCircle className="w-6 h-6 text-[#00796B] flex-shrink-0 mt-0.5" />
-                  <span className="text-lg text-[#C8D7D4] leading-relaxed">{item}</span>
+                  <span className="text-lg text-white leading-relaxed">{item}</span>
                 </li>
               ))}
             </ul>
@@ -338,7 +338,7 @@ export function CaseStudyDetail() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {study.changed.map((item: string, index: number) => (
                 <Card key={index} className="bg-[#081517] border-l-4 border-[#00796B]">
-                  <p className="text-[#C8D7D4] leading-relaxed">{item}</p>
+                  <p className="text-white leading-relaxed">{item}</p>
                 </Card>
               ))}
             </div>
@@ -352,7 +352,7 @@ export function CaseStudyDetail() {
             <div className="mb-8">
               <h2 className="text-3xl mb-3">{id === "adelaide-hills-wine-region" ? "Brand Positioning" : "Campaign assets"}</h2>
               {id !== "adelaide-hills-wine-region" && (
-                <p className="text-lg text-[#C8D7D4] leading-relaxed max-w-3xl">
+                <p className="text-lg text-white leading-relaxed max-w-3xl">
                   Selected campaign assets from this case study, including screen work, print executions, and supporting materials.
                 </p>
               )}
@@ -384,7 +384,7 @@ export function CaseStudyDetail() {
                     <div>
                       <h3 className="text-xl mb-1">{asset.title}</h3>
                       {!(id === "adelaide-hills-wine-region" && asset.type === "pdf") && (
-                        <p className="text-sm text-[#8EA3A0] uppercase tracking-wide">
+                        <p className="text-sm text-white uppercase tracking-wide">
                           {asset.type === "video" ? "Screen asset" : asset.type === "image" ? "Campaign artwork" : "Print asset"}
                         </p>
                       )}
@@ -409,7 +409,7 @@ export function CaseStudyDetail() {
       <Section background="dark">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl mb-6">Discuss your challenge</h2>
-          <p className="text-xl text-[#B8C9C6] mb-10 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-white mb-10 max-w-3xl mx-auto leading-relaxed">
             Every project presents different challenges. Let's talk about how we can help with yours.
           </p>
           <Button to="/contact" size="lg">

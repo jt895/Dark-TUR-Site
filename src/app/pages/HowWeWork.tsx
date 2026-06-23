@@ -72,7 +72,7 @@ export function HowWeWork() {
       <Section className="pt-32 pb-20" background="white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl mb-8">How we work</h1>
-          <p className="text-xl text-[#B8C9C6] leading-relaxed">
+          <p className="text-xl text-white leading-relaxed">
             The United Republic works from strategy through to delivery. We can support one phase of the process or guide the full journey from problem definition to campaign execution.
           </p>
         </div>
@@ -105,7 +105,7 @@ export function HowWeWork() {
                 <h2 className="text-4xl mb-3">{phase.title}</h2>
                 <p className="text-xl text-[#00796B] italic mb-8">{phase.description}</p>
                 
-                <p className="text-lg text-[#C8D7D4] leading-relaxed mb-8">
+                <p className="text-lg text-white leading-relaxed mb-8">
                   {phase.detail}
                 </p>
 
@@ -116,14 +116,14 @@ export function HowWeWork() {
                       {phase.services.map((service, idx) => (
                         <li key={idx} className="flex items-start gap-3">
                           <ArrowRight className="w-5 h-5 text-[#00796B] flex-shrink-0 mt-0.5" />
-                          <span className="text-[#C8D7D4]">{service}</span>
+                          <span className="text-white">{service}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-4">Our approach</h3>
-                    <p className="text-[#C8D7D4] leading-relaxed">{phase.approach}</p>
+                    <p className="text-white leading-relaxed">{phase.approach}</p>
                   </div>
                 </div>
               </div>
@@ -137,7 +137,7 @@ export function HowWeWork() {
           <h2 className="text-4xl md:text-5xl mb-6">
             Strategy through to delivery
           </h2>
-          <p className="text-xl text-[#B8C9C6] mb-10 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-white mb-10 max-w-3xl mx-auto leading-relaxed">
             The United Republic works from problem definition through to identifying, briefing and guiding the right execution partners. We bring strategic clarity up front, and help make sure that clarity survives through to delivery.
           </p>
           <Button to="/services" size="lg">

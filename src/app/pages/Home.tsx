@@ -126,54 +126,57 @@ export function Home() {
   return (
     <>
       {/* Hero Section */}
-      <Section className="pt-28 pb-12" background="dark" animate={false}>
-        <div className="relative overflow-hidden min-h-[680px] bg-[#03090A] -mx-6 lg:-mx-8">
-          <iframe
-            src="/hero-flag.html"
-            title="United Republic animated hero background"
-            className="absolute inset-0 h-full w-full opacity-55 pointer-events-none border-0"
-          />
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(3,9,10,0.82)_0%,rgba(3,9,10,0.70)_42%,rgba(3,9,10,0.42)_100%)]" />
-          <motion.div
-            className="relative z-10 max-w-4xl px-6 py-16 md:px-12 md:py-20 lg:px-16"
-            initial="hidden"
-            animate="visible"
-            variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.12 } } }}
-          >
-            <motion.h1
-              className="text-5xl md:text-6xl lg:text-7xl mb-8 leading-tight text-white"
-              variants={{ hidden: { opacity: 0, y: 34 }, visible: { opacity: 1, y: 0 } }}
-              transition={{ duration: 0.7, ease: "easeOut" }}
-            >
-              Start with the right questions, then build the right response.
-            </motion.h1>
-            <motion.p
-              className="text-xl md:text-2xl text-gray-300 mb-6"
-              variants={{ hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-            >
-              The United Republic helps organisations define the real problem, shape the right strategy, and guide the work that follows.
-            </motion.p>
-            <motion.p
-              className="text-lg text-gray-300 mb-10 max-w-3xl"
-              variants={{ hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-            >
-              We work with government, brands and complex organisations to make sure they are solving the right problems before investing in campaigns, content, media, stakeholder activity or creative development.
-            </motion.p>
-            <motion.div
-              className="flex flex-col sm:flex-row gap-4"
-              variants={{ hidden: { opacity: 0, y: 18 }, visible: { opacity: 1, y: 0 } }}
-              transition={{ duration: 0.55, ease: "easeOut" }}
-            >
-              <Button to="/contact" size="lg">
-                Start with a strategic diagnostic
-              </Button>
-              <Button to="/how-we-work" variant="outline" size="lg">
-                See how we work
-              </Button>
-            </motion.div>
-          </motion.div>
+      <Section className="pt-28 pb-0" background="dark" animate={false}>
+        <div className="relative -mx-6 lg:-mx-8 min-h-[150vh]">
+          <div className="sticky top-0 h-screen overflow-hidden bg-[#03090A]">
+            <iframe
+              src="/hero-flag.html"
+              title="United Republic animated hero background"
+              className="absolute inset-0 h-full w-full opacity-60 pointer-events-none border-0"
+            />
+            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(3,9,10,0.82)_0%,rgba(3,9,10,0.70)_42%,rgba(3,9,10,0.44)_100%)]" />
+            <div className="relative z-10 max-w-4xl px-6 pt-16 pb-20 md:px-12 lg:px-16">
+              <motion.div
+                initial="hidden"
+                animate="visible"
+                variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.12 } } }}
+              >
+                <motion.h1
+                  className="text-5xl md:text-6xl lg:text-7xl mb-8 leading-tight text-white"
+                  variants={{ hidden: { opacity: 0, y: 34 }, visible: { opacity: 1, y: 0 } }}
+                  transition={{ duration: 0.7, ease: "easeOut" }}
+                >
+                  Start with the right questions, then build the right response.
+                </motion.h1>
+                <motion.p
+                  className="text-xl md:text-2xl text-white mb-6"
+                  variants={{ hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } }}
+                  transition={{ duration: 0.6, ease: "easeOut" }}
+                >
+                  The United Republic helps organisations define the real problem, shape the right strategy, and guide the work that follows.
+                </motion.p>
+                <motion.p
+                  className="text-lg text-white mb-10 max-w-3xl"
+                  variants={{ hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } }}
+                  transition={{ duration: 0.6, ease: "easeOut" }}
+                >
+                  We work with government, brands and complex organisations to make sure they are solving the right problems before investing in campaigns, content, media, stakeholder activity or creative development.
+                </motion.p>
+                <motion.div
+                  className="flex flex-col sm:flex-row gap-4"
+                  variants={{ hidden: { opacity: 0, y: 18 }, visible: { opacity: 1, y: 0 } }}
+                  transition={{ duration: 0.55, ease: "easeOut" }}
+                >
+                  <Button to="/contact" size="lg">
+                    Start with a strategic diagnostic
+                  </Button>
+                  <Button to="/how-we-work" variant="outline" size="lg">
+                    See how we work
+                  </Button>
+                </motion.div>
+              </motion.div>
+            </div>
+          </div>
         </div>
       </Section>
 
@@ -213,7 +216,7 @@ export function Home() {
       <Section background="grey">
         <div className="max-w-4xl mx-auto text-center mb-20">
           <h2 className="text-4xl md:text-5xl mb-6">Our methodology</h2>
-          <p className="text-xl text-[#B8C9C6]">The United Republic Creative Methodology</p>
+          <p className="text-xl text-white">The United Republic Creative Methodology</p>
         </div>
         <div className="space-y-16 max-w-6xl mx-auto">
           {methodology.map((step, index) => (
@@ -224,12 +227,12 @@ export function Home() {
               <div className="lg:col-span-11">
                 <Card>
                   <h3 className="text-3xl mb-4">{step.title}</h3>
-                  <p className="text-lg text-[#B8C9C6] mb-8 leading-relaxed">{step.description}</p>
+                  <p className="text-lg text-white mb-8 leading-relaxed">{step.description}</p>
                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
                     {step.points.map((point, idx) => (
                       <li key={idx} className="flex items-start gap-3">
                         <ArrowRight className="w-5 h-5 text-[#00796B] flex-shrink-0 mt-0.5" />
-                        <span className="text-[#C8D7D4]">{point}</span>
+                        <span className="text-white">{point}</span>
                       </li>
                     ))}
                   </ul>
@@ -249,10 +252,10 @@ export function Home() {
           {services.map((service, index) => (
             <Card key={index} hover className="h-full">
               <h3 className="text-2xl mb-3 text-[#00796B]">{service.title}</h3>
-              <p className="text-base mb-6 text-[#B8C9C6] italic">{service.subtitle}</p>
+              <p className="text-base mb-6 text-white italic">{service.subtitle}</p>
               <ul className="space-y-2">
                 {service.items.map((item, idx) => (
-                  <li key={idx} className="text-sm text-[#C8D7D4] leading-relaxed">
+                  <li key={idx} className="text-sm text-white leading-relaxed">
                     {item}
                   </li>
                 ))}
@@ -301,7 +304,7 @@ export function Home() {
           <h2 className="text-4xl md:text-5xl mb-6">
             Solve the right problems before you invest in execution.
           </h2>
-          <p className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto">
+          <p className="text-xl text-white mb-10 max-w-3xl mx-auto">
             If you need clearer problem definition, stronger strategy, or the right delivery partners to bring complex work to life, let's talk.
           </p>
           <Button to="/contact" size="lg">

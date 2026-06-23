@@ -60,7 +60,7 @@ export function ClientLogos() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-sm uppercase tracking-wider text-[#9DB2AE] mb-2"
+          className="text-sm uppercase tracking-wider text-white mb-2"
         >
           Trusted by leading organizations
         </motion.h3>
@@ -92,7 +92,7 @@ export function ClientLogos() {
               <div className="font-medium text-white mb-1 text-sm md:text-base">
                 {client.name}
               </div>
-              <div className="text-xs text-[#6F8682] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="text-xs text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 {client.category}
               </div>
             </div>
@@ -107,7 +107,7 @@ export function ClientLogos() {
         transition={{ duration: 0.6, delay: 0.4 }}
         className="text-center mt-10 pt-8 border-t border-[#163135]"
       >
-        <p className="text-[#9DB2AE] max-w-3xl mx-auto">
+        <p className="text-white max-w-3xl mx-auto">
           Strategic communications work across brand development, retail campaigns, content strategy,
           and implementation for organizations spanning automotive, financial services, government,
           retail, wine and spirits, technology, and social sectors.

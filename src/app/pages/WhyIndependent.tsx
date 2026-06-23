@@ -67,7 +67,7 @@ export function WhyIndependent() {
                   <CheckCircle className="w-7 h-7 text-[#00796B] flex-shrink-0 mt-1" />
                   <h3 className="text-2xl">{benefit.title}</h3>
                 </div>
-                <p className="text-[#C8D7D4] leading-relaxed ml-11">{benefit.description}</p>
+                <p className="text-white leading-relaxed ml-11">{benefit.description}</p>
               </Card>
             ))}
           </div>
@@ -128,7 +128,7 @@ export function WhyIndependent() {
           <h2 className="text-4xl md:text-5xl mb-6">
             Start with strategy
           </h2>
-          <p className="text-xl text-[#B8C9C6] mb-10 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-white mb-10 max-w-3xl mx-auto leading-relaxed">
             If you need strategic clarity before you invest in execution—and want to make sure that clarity carries through to delivery—let's talk.
           </p>
           <Button to="/contact" size="lg">
